@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - ProtonVPN Style</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div class="background-image">
+        <div class="login-container">
+            <h1>Create Your Account</h1>
+            <form id="registrationForm">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="text" id="surname" name="surname" placeholder="Surname" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm Email" required>
+                <button type="submit">Register</button>
+            </form>
+            <p id="message" class="message"></p>
+        </div>
+    </div>
+
+    <script src="registrationScript.js"></script>
+</body>
+</html>
