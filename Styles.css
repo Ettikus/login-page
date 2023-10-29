@@ -1,8 +1,10 @@
+/* General styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
 }
 
+/* Background image and layout adjustments */
 .background-image {
     background: url('https://i.imgur.com/UJD6gch.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -11,14 +13,16 @@ body {
     align-items: center;
     justify-content: center;
 }
-    .login-container {
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        width: 600px; /* Adjust the width as needed */
-        margin: 0 auto; /* Center the container horizontally */
-    }
+
+/* Login container adjustments */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 400px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+}
 
 h1 {
     color: #333;
@@ -26,15 +30,15 @@ h1 {
 
 input[type="text"],
 input[type="password"] {
-    width: 80%;
-    padding: 10px;
+    width: 80%; /* Adjust the width as needed for mobile */
+    padding: 10px; /* Adjust the padding as needed */
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 button {
-    width: 100%;
+    width: 80%; /* Adjust the width as needed for mobile */
     padding: 10px;
     margin: 10px 0;
     background-color: #0070FF;
@@ -59,4 +63,23 @@ button:hover {
     text-decoration: none;
     color: #0070FF;
     font-weight: bold;
+}
+
+/* Media query for smaller screens (mobile devices) */
+@media (max-width: 768px) {
+    .background-image {
+        /* Adjustments for smaller screens */
+    }
+
+    .login-container {
+        width: 90%; /* Adjustments for mobile */
+        /* Other style adjustments for mobile display */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button {
+        width: 90%; /* Adjustments for mobile */
+        /* Other style adjustments for mobile display */
+    }
 }
