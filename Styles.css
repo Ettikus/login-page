@@ -6,7 +6,7 @@ body {
 
 /* Background image and layout adjustments */
 .background-image {
-    background: url('direct-image-url.jpg') no-repeat center center fixed;
+    background: url('https://i.imgur.com/UJD6gch.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
