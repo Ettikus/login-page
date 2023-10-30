@@ -6,7 +6,7 @@ body {
 
 /* Background image and layout adjustments */
 .background-image {
-    background: url('https://i.imgur.com/UJD6gch.jpg') no-repeat center center fixed;
+    background: url('direct-image-url.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -14,8 +14,8 @@ body {
     justify-content: center;
 }
 
-/* Login container adjustments */
-.login-container {
+/* Registration container adjustments */
+.registration-container {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 8px;
@@ -31,7 +31,7 @@ h1 {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 80%; /* Adjust the width as needed for mobile */
+    width: 80%; /* Adjust the width as needed */
     padding: 10px; /* Adjust the padding as needed */
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -39,7 +39,7 @@ input[type="password"] {
 }
 
 button {
-    width: 80%; /* Adjust the width as needed for mobile */
+    width: 80%; /* Adjust the width as needed */
     padding: 10px;
     margin: 10px 0;
     background-color: #0070FF;
@@ -72,15 +72,34 @@ button:hover {
         /* Adjustments for smaller screens */
     }
 
-    .login-container {
+    .registration-container {
         width: 90%; /* Adjustments for mobile */
-        /* Other style adjustments for mobile display */
+        padding: 15px; /* Adjustments for mobile */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjustments for mobile */
     }
 
     input[type="text"],
-    input[type="password"],
+    input[type="email"],
+    input[type="password"] {
+        width: 90%; /* Adjustments for mobile */
+        padding: 8px; /* Adjustments for mobile */
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
     button {
         width: 90%; /* Adjustments for mobile */
-        /* Other style adjustments for mobile display */
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+
+    .message {
+        font-size: 14px; /* Adjustments for mobile */
+        margin-top: 8px;
     }
 }
